@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>Welcome to Student Dashboard</h1>
+    <form id="student-form">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="text" id="classTimings" placeholder="Class Timings" required>
+      <input type="text" id="campus" placeholder="Campus" required>
+      <input type="text" id="teacher" placeholder="Teacher" required>
+      <input type="text" id="course" placeholder="Course" required>
+      <button type="submit">Save Details</button>
+    </form>
+
+    <div id="profile" style="display:none;">
+      <h3>📘 Your Profile</h3>
+      <p><b>Name:</b> <span id="pName"></span></p>
+      <p><b>Class:</b> <span id="pClass"></span></p>
+      <p><b>Campus:</b> <span id="pCampus"></span></p>
+      <p><b>Teacher:</b> <span id="pTeacher"></span></p>
+      <p><b>Course:</b> <span id="pCourse"></span></p>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
